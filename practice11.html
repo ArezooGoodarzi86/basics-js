@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-15-1</title>
+    <!-- Question:Write a program to get a number from the user and print the reverse of the number.-->
+    <script>
+        var num = Number(prompt("enter your number: "));
+        while (num>0) {
+            
+        
+            document.write(num%10);
+        
+            num=parseInt(num/10);
+        }
+        // 9874%10 = 4 
+        //9874 /10 = 987.4
+        //parsint(987.4)=987
+        //987%10=7
+        //987/10 =98.7
+        //parseInt(98.7)=98
+        //98%10 = 8
+        //98/10=9.8
+        //parseInt(9.8)=9
+        //total=4789
+    </script>
+</head>
+<body>
+  
+</body>
+</html>

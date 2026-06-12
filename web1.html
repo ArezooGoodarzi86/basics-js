@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-15-1</title>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      .box1{
+        width: 200px;
+        height: 50px;
+        background-color: red;
+        margin-bottom: 20px;
+      }
+       .box2{
+        width: 200px;
+        height: 50px;
+        background-color: rgb(9, 185, 111);
+        margin-bottom: 20px;
+      }
+    </style>
+</head>
+<body>
+      <form action="">
+        <input type="radio" name="ss">male
+        <input type="radio" name="ss">female
+      </form>
+      <div>jahad</div>
+      <div>jahad</div>
+      <div>jahad</div>
+      <p class="text">welcome</p>
+      <p class="text">to my class</p>
+      <p id="main"></p>
+      <script>
+        var list1=document.getElementsByTagName("div");
+        var list2=document.getElementsByClassName("text");
+        var list3 = document.getElementsByName("ss");
+        var list4 = document.getElementById("main");
+        list4.style.color = 'red';
+        list4.style.width = "200px";
+        list4.style.height ="80px";
+        list4.style.backgroundColor = "green";
+        list4.innerHTML ="goodarzi";
+        list4.style.fontSize ="20pt";
+        for (i=0;i<2;i++) {
+         list1[i].setAttribute("class","box1");
+        }
+         for (i=0;i<2;i++) {
+         list1[0].setAttribute("class","box2");
+        }
+      </script>
+</body>
+</html>

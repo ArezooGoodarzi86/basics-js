@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-15-2</title>
+    <!-- Question:create 3 classes With your desired settings and apply on 3 'div'.-->
+    <style>
+        .box1{
+            color: aqua;
+            font-size: 2rem;
+            background-color: chocolate;
+        }
+          .box2{
+            color: rgb(14, 14, 165);
+            font-size: 2rem;
+            background-color: rgb(218, 218, 8);
+        }
+         .box3{
+            color: rgb(187, 9, 241);
+            font-size: 2rem;
+            background-color: rgb(6, 165, 128);
+        }
+    </style>
+</head>
+<body>
+    <div>example1</div>
+    <div>example2</div>
+    <div>example3</div>
+    <script>
+      var list1 = document.getElementsByTagName("div");
+      for (i=0;i<3;i++) {
+        list1[0].setAttribute("class","box1");
+        list1[1].setAttribute("class","box2");
+        list1[2].setAttribute("class","box3");
+      }
+    </script>
+</body>
+</html>
